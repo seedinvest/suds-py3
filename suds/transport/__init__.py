@@ -37,7 +37,7 @@ class Request:
     @type headers: dict
     """
 
-    def __init__(self, url, message=None, *args, **kwargs):
+    def __init__(self, url, message=None):
         """
         @param url: The url for the request.
         @type url: str
