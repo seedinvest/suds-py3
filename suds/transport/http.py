@@ -102,7 +102,7 @@ class HttpTransport(Transport):
         """
         self.cookiejar.extract_cookies(fp, u2request)
 
-    def u2open(self, u2request, encode_chunked=False):
+    def u2open(self, u2request):
         """
         Open a connection.
         @param u2request: A urllib2 request.
