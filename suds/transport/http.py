@@ -58,7 +58,7 @@ class HttpTransport(Transport):
             url = request.url
             headers = request.headers
             log.debug('opening (%s)', url)
-            u2request = u2.Request(url, None, headers)
+            u2request = u2.Request(url, None, headers, encode_chunked=False)
             self.proxy = self.options.proxy
             return self.u2open(u2request)
         except HTTPError as e:
