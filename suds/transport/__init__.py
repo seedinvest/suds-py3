@@ -37,7 +37,7 @@ class Request:
     @type headers: dict
     """
 
-    def __init__(self, url, message=None):
+    def __init__(self, url, message=None, **kwargs):
         """
         @param url: The url for the request.
         @type url: str
@@ -103,7 +103,7 @@ class Transport:
         self.options = Options()
         del Options
 
-    def open(self, request, encode_chunked=False):
+    def open(self, request):
         """
         Open the url in the specified request.
         @param request: A transport request.
