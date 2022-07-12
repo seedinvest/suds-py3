@@ -103,7 +103,7 @@ class Transport:
         self.options = Options()
         del Options
 
-    def open(self, request):
+    def open(self, request, encode_chunked=False):
         """
         Open the url in the specified request.
         @param request: A transport request.
