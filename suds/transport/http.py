@@ -18,7 +18,7 @@
 Contains classes for basic HTTP transport implementations.
 """
 
-import urllib3.request as u2
+import urllib.request as u2
 from urllib.error import HTTPError
 from base64 import b64encode
 import socket
